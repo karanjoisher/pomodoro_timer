@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Pomodoro Timer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+	<link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
+	<link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700'>
+     <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <html>  
+<body>
+  <div class = 'header'>
+    <span class = 'score'><img src='assets/coin.png'>	&nbsp;<span class = 'coins'>0</span></span>
+    <span class ='stats glyphicon glyphicon-stats
+'></span>
+  </div> 
+  
+  <div class='introduction'>
+    <h1  class='text-center'><span>Pomodoro   Timer</span></h1>
+    <br>
+      <div class = ' text-center'>
+<div class = 'input-div center'>
+        <table class = 'center'>
+      <tr>
+        <td>Session</td>
+        <td><input class='session' type = 'text'></input></td>
+      </tr>
+      <tr>
+        <td>Break</td>
+        <td><input class = 'break' type = 'text'></input></td>
+  </tr>
+</table>
+
+<p class=' text-center'>
+<span>NOTE</span> : Input format should be x:yy:zz OR yy:zz where x is hours yy is minutes and zz is seconds.<br> Minimum Limit : 5:00, Maximum Limit : 2:00:00</p>
+  </div>
+<i class='text-center start glyphicon glyphicon-play-circle'></i>
+</div>
+  
+  
+
+    <div class = 'content'>
+      <div class= 'list center'>
+      <ul>
+      <li>Decide on the task to be done.
+        </li><li>
+Set the session and break durations.Click on start button.</li>
+<li>While you work the focus tree grows which yields you coins.<br>If you cancel the session before it's done the tree will die and you won't get any rewards.</li>
+<li>After session is done, take a break and start again with your task.</li>
+        <li>For every session you'll earn
+          <ol><li>1 coin (5-9 minutes)</li>
+          <li>5 coins (10-29 minutes).</li>
+            <li>20 coins (30 minutes).</li>
+         </ol>
+        </li>        
+        </ul>
+      <p>You can view a graph of the session durations by clicking on stats button on the top right corner.</p></div>
+</div>
+  </div>  
+    <div class='graph-container text-center'>
+      
+  <div class = 'graph'>
+  <div id='label'>Duration in minutes</div>
+<canvas id='can' height='300'></canvas>
+    </div><br>
+    <i class='graph-cancel glyphicon glyphicon-remove-sign'></i>
+    </div>
+  
+  <div class = 'pomodoro'>
+  
+  
+  <div class = 'clock text-center'>
+    <span id = 'state'>SESSION</span>
+    <br>
+    <span id = 'time'></span>
+  </div>
+  
+  <div class='graphics center'>
+    <div class='sprite'></div>
+    <canvas id='canvas' width='300' height='300'></canvas>
+  </div>
+    <div class = 'performance'></div>
+  <div class = 'reset text-center'><i class='glyphicon glyphicon-remove-sign'></i></div>
+</div>
+  
+</body>
+
+</html>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+  
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>
